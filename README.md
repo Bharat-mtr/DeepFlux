@@ -6,6 +6,8 @@ The code and trained models of:
 
 DeepFlux for Skeletons in the Wild, CVPR 2019 [[Paper]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_DeepFlux_for_Skeletons_in_the_Wild_CVPR_2019_paper.pdf)
 
+[DagsHub Repository](https://dagshub.com/Bharat-mtr/DeepFlux)
+
 ## Citation
 
 Please cite the related works in your publications if it helps your research:
@@ -26,7 +28,7 @@ Please cite the related works in your publications if it helps your research:
 
 * Caffe and VGG-16 pretrained model [[VGG_ILSVRC_16_layers.caffemodel]](http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel)
 
-* Datasets: [[SK-LARGE]](https://drive.google.com/file/d/1eBIjpzU0kttcKEesRJ2y29_yMcc03sbh/view?usp=sharing), [[SYM-PASCAL]](https://drive.google.com/file/d/1PSfksp7X9fhF0xZ9jOaMb0f4eUs8ED9j/view?usp=sharing)
+* Datasets: [[SK-LARGE]](https://dagshub.com/Bharat-mtr/DeepFlux/src/master/data/SK-LARGE), [[SYM-PASCAL]](https://dagshub.com/Bharat-mtr/DeepFlux/src/master/data/SymPASCAL-by-KZ)
 
 * OpenCV 3.4.3 (C++ or Python, optional)
 
@@ -53,7 +55,7 @@ Please refer to [Caffe Installation](http://caffe.berkeleyvision.org/install_apt
 
 # download datasets and pretrained model then
 mkdir data && mv [your_dataset_folder] data/
-mkdir models && mv [your_pretrained_model] models/
+mkdir model && mv [your_pretrained_model] models/
 # data augmentation
 cd data/[your_dataset_folder]
 matlab -nodisplay -r "run augmentation.m; exit"
